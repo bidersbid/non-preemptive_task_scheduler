@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Non-preemptive Task set Scheduler : This simulator schedules task sets using Algorithm C, D, EDF and LLF. The task sets to be schedules are non-preemptive and independent." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Non-preemptive Task set Scheduler</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bidersbid/non-preemptive_task_scheduler">View on GitHub</a>
+
+          <h1 id="project_title">Non-preemptive Task set Scheduler</h1>
+          <h2 id="project_tagline">This simulator schedules task sets using Algorithm C, D, EDF and LLF. The task sets to be schedules are non-preemptive and independent.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/bidersbid/non-preemptive_task_scheduler/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/bidersbid/non-preemptive_task_scheduler/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-nitin-joshis-pages" class="anchor" href="#welcome-to-nitin-joshis-pages"><span class="octicon octicon-link"></span></a>Welcome to Nitin Joshi's Pages.</h3>
+
+<p>This page simply introduces the project to the visitors. The detailed implementation and technical report can be downloaded from </p>
+
+<h4>
+<a name="abstract" class="anchor" href="#abstract"><span class="octicon octicon-link"></span></a>Abstract:</h4>
+
+<p>With the burgeoning demand of embedded systems with extensive time sensitive processing throughout the globe, the research communities from the computing industry are continuously raising the bars by introducing better and faster process scheduling algorithms. </p>
+
+<p>In this paper we try to compare the performances of one of the best known traditional scheduling algorithms such as EDF, LLF with some of the most recent works in the field of multi-processor, non-preemptive scheduling algorithms like Algorithm C and Algorithm D.</p>
+
+<pre><code>Simulator designed and implemented by:
+Nitin Joshi
+Department of Computer Science
+Lamar University
+Beaumont, TX
+</code></pre>
+
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction:</h2>
+
+<p>In the study of real-time embedded systems, schedulability problem remains the most researched problem and over the course of several decades many pioneering researchers have presented scheduling algorithms such as EDF and LLF that changed the way scheduling analysis of task sets is done. These scheduling algorithms aim to provide optimal feasible schedules of task sets under various constraints. Despite such a radical increase in study of such algorithms, the schedulability analysis of non-preemptive tasks has received less attention in the real-time embedded research community.</p>
+
+<p>There are many benefits of using non-preemptive tasks over preemptive tasks on multiprocessor platform. This is primarily because in non-preemptive scheduling the task instance runs until its computation time on the same processor where as in preemptive scheduling task migration creates a lot of computational overheads and makes prediction difficult [ACR2011]. </p>
+
+<p>In this paper we prove by simulated implementation that despite EDF with idle task being an optimal method for uniprocessor platform [GMR1995], EDF is no longer optimal for multiprocessor platform. We show this by providing a feasible schedule by algorithm C described in [ACGR2010] and Algorithm D [ACR2013] for all task sets for which EDF failed to provide a feasible schedule. The tabulated result in Section III shows the feasibility of task sets by different scheduling methods. </p>
+
+<p>The aim of this paper is to show that although the scheduling problem is NP-complete, the Algorithms C and D were still able to find a feasible schedule for most single-instance, non-preemptive and independent task sets. In the next section we provide the implementation details for the simulation tool used for the analysis.</p>
+
+<h2>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors:</h2>
+
+<pre><code>Ştefan Andrei
+Lamar University
+Department of Computer Science
+Beaumont, TX, USA
+</code></pre>
+
+<pre><code>Albert M.K. Cheng
+University of Houston
+Computer Science Department
+Houston, TX, USA
+</code></pre>
+
+<pre><code>Vlad Rǎdulescu
+Cuza University of Iaşi
+Department of Computer Science
+Iaşi, Romania
+</code></pre>
+
+<pre><code>Nitin Joshi
+Lamar University
+Department of Computer Science
+Beaumont, TX, USA
+</code></pre>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Non-preemptive Task set Scheduler maintained by <a href="https://github.com/bidersbid">bidersbid</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
